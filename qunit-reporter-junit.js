@@ -13,7 +13,8 @@
  * Released under the MIT license.
  * https://jquery.org/license/
  */
-(function () {
+
+module.exports = function (QUnit) {
 	'use strict';
 
 	var currentRun, currentModule, currentTest, assertCount,
@@ -377,5 +378,4 @@
 
 		_executeRegisteredCallbacks();
 	};
-
-})();
+};
